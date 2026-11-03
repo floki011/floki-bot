@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <title>Floki Bot | Power. Control. Security.</title>
+  <meta name="description" content="Floki Bot - Complete Discord server management, moderation and security.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">F</span>
+      <span>FLOKI <small>BOT</small></span>
+    </a>
+
+    <nav>
+      <a href="#home" data-en="Home" data-ar="الرئيسية">Home</a>
+      <a href="#features" data-en="Features" data-ar="المميزات">Features</a>
+      <a href="privacy.html" data-en="Privacy" data-ar="الخصوصية">Privacy</a>
+      <a href="terms.html" data-en="Terms" data-ar="الشروط">Terms</a>
+    </nav>
+
+    <div class="header-actions">
+      <button id="languageBtn" class="language-btn">عربي</button>
+      <a class="add-btn" href="https://discord.com/oauth2/authorize?client_id=1566838921134874784&permissions=8&integration_type=0&scope=bot+applications.commands">
+        ADD TO DISCORD
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="verified">✓ VERIFIED DISCORD BOT</div>
+
+      <div class="hero-logo">
+    <img src="images/floki.png" alt="Floki Bot">
+</div>
+
+      <h1 id="heroTitle">POWER. CONTROL. SECURITY.</h1>
+
+      <p id="heroDescription">
+        Floki Bot is an all-in-one Discord server management system
+        featuring advanced logging, moderation, voice channel tracking,
+        administrative controls, and server management tools.
+      </p>
+
+      <div class="hero-actions">
+        <a class="add-btn large" href="https://discord.com/oauth2/authorize?client_id=1566838921134874784&permissions=8&integration_type=0&scope=bot+applications.commands">
+          ADD TO DISCORD
+        </a>
+        <a class="secondary-btn" href="#features">EXPLORE FEATURES</a>
+      </div>
+
+      <div class="hero-label">POWERED BY FLOKI SYSTEMS</div>
+    </section>
+
+  <section class="features" id="features">
+
+  <div class="section-heading">
+    <span data-en="WHAT WE OFFER" data-ar="ماذا نقدم">WHAT WE OFFER</span>
+
+    <h2 id="featuresTitle"
+        data-en="Powerful Server Management"
+        data-ar="إدارة قوية ومتطورة للسيرفر">
+      Powerful Server Management
+    </h2>
+
+    <p id="featuresDescription"
+       data-en="Everything your Discord community needs in one place."
+       data-ar="كل ما يحتاجه مجتمعك على ديسكورد في مكان واحد.">
+      Everything your Discord community needs in one place.
+    </p>
+  </div>
+
+  <div class="features-grid">
+
+    <div class="feature-card" data-feature="logging" role="button" tabindex="0">
+      <div class="feature-icon">⌘</div>
+      <h3 data-en="Advanced Logging" data-ar="السجلات المتقدمة">Advanced Logging</h3>
+      <p data-en="Monitor server events and important activities."
+         data-ar="راقب أحداث السيرفر والنشاطات المهمة.">
+        Monitor server events and important activities.
+      </p>
+      <span class="feature-more" data-en="Learn More →" data-ar="اعرف المزيد ←">Learn More →</span>
+    </div>
+
+    <div class="feature-card" data-feature="moderation" role="button" tabindex="0">
+      <div class="feature-icon">◆</div>
+      <h3 data-en="Moderation" data-ar="الإشراف والحماية">Moderation</h3>
+      <p data-en="Manage your community with advanced moderation tools."
+         data-ar="أدر مجتمعك باستخدام أدوات إشراف متقدمة.">
+        Manage your community with advanced moderation tools.
+      </p>
+      <span class="feature-more" data-en="Learn More →" data-ar="اعرف المزيد ←">Learn More →</span>
+    </div>
+
+    <div class="feature-card" data-feature="voice" role="button" tabindex="0">
+      <div class="feature-icon">♫</div>
+      <h3 data-en="Voice Tracking" data-ar="تتبع الرومات الصوتية">Voice Tracking</h3>
+      <p data-en="Track voice channel activity and member movements."
+         data-ar="تابع نشاط الرومات الصوتية وحركة الأعضاء.">
+        Track voice channel activity and member movements.
+      </p>
+      <span class="feature-more" data-en="Learn More →" data-ar="اعرف المزيد ←">Learn More →</span>
+    </div>
+
+    <div class="feature-card" data-feature="admin" role="button" tabindex="0">
+      <div class="feature-icon">♙</div>
+      <h3 data-en="Admin Controls" data-ar="التحكم الإداري">Admin Controls</h3>
+      <p data-en="Keep administrative actions organized and monitored."
+         data-ar="نظّم الإجراءات الإدارية وراقبها.">
+        Keep administrative actions organized and monitored.
+      </p>
+      <span class="feature-more" data-en="Learn More →" data-ar="اعرف المزيد ←">Learn More →</span>
+    </div>
+
+  </div>
+
+  <div class="feature-modal" id="featureModal">
+    <div class="feature-modal-content">
+      <button class="feature-modal-close" id="closeFeatureModal">×</button>
+      <div class="feature-modal-icon" id="modalIcon">⌘</div>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+
+</section>
+</section>
+
+      
+   </section>
+ 
+<section class="commands-section" id="commands">
+  <div class="section-heading">
+    <span class="section-tag">FLOKI COMMANDS</span>
+    <h2 data-en="Explore Commands" data-ar="استكشف الأوامر">Explore Commands</h2>
+    <p data-en="Everything you need to manage your server."
+       data-ar="كل الأوامر التي تحتاجها لإدارة سيرفرك.">
+      Everything you need to manage your server.
+    </p>
+  </div>
+
+  <div class="commands-tools">
+    <input id="commandSearch" type="text"
+      placeholder="Search commands..."
+      data-en="Search commands..." data-ar="ابحث عن أمر..." />
+
+    <div class="command-filters">
+      <button class="command-filter active" data-filter="all"
+        data-en="All" data-ar="الكل">All</button>
+      <button class="command-filter" data-filter="general"
+        data-en="General" data-ar="عامة">General</button>
+      <button class="command-filter" data-filter="admin"
+        data-en="Admin" data-ar="إدارية">Admin</button>
+      <button class="command-filter" data-filter="voice"
+        data-en="Voice" data-ar="صوتية">Voice</button>
+    </div>
+  </div>
+
+  <div class="commands-grid" id="commandsGrid">
+
+    <article class="command-card" data-category="general">
+      <span class="command-category">GENERAL</span>
+      <h3>/help</h3>
+      <p data-en="Display the bot help menu."
+         data-ar="عرض قائمة المساعدة والأوامر.">Display the bot help menu.</p>
+      <button class="copy-command" data-command="/help"
+        data-en="Copy Command" data-ar="نسخ الأمر">Copy Command</button>
+    </article>
+
+    <article class="command-card" data-category="general">
+      <span class="command-category">GENERAL</span>
+      <h3>/ping</h3>
+      <p data-en="Check the bot response speed."
+         data-ar="فحص سرعة استجابة البوت.">Check the bot response speed.</p>
+      <button class="copy-command" data-command="/ping"
+        data-en="Copy Command" data-ar="نسخ الأمر">Copy Command</button>
+    </article>
+
+    <article class="command-card" data-category="admin">
+      <span class="command-category">ADMIN</span>
+      <h3>/ban</h3>
+      <p data-en="Ban a member from your server."
+         data-ar="حظر عضو من السيرفر.">Ban a member from your server.</p>
+      <button class="copy-command" data-command="/ban"
+        data-en="Copy Command" data-ar="نسخ الأمر">Copy Command</button>
+    </article>
+
+    <article class="command-card" data-category="admin">
+      <span class="command-category">ADMIN</span>
+      <h3>/kick</h3>
+      <p data-en="Remove a member from your server."
+         data-ar="طرد عضو من السيرفر.">Remove a member from your server.</p>
+      <button class="copy-command" data-command="/kick"
+        data-en="Copy Command" data-ar="نسخ الأمر">Copy Command</button>
+    </article>
+
+    <article class="command-card" data-category="voice">
+      <span class="command-category">VOICE</span>
+      <h3>/voice</h3>
+      <p data-en="View voice channel activity."
+         data-ar="عرض نشاط الرومات الصوتية.">View voice channel activity.</p>
+      <button class="copy-command" data-command="/voice"
+        data-en="Copy Command" data-ar="نسخ الأمر">Copy Command</button>
+    </article>
+
+    <article class="command-card" data-category="voice">
+      <span class="command-category">VOICE</span>
+      <h3>/voice-stats</h3>
+      <p data-en="View voice activity statistics."
+         data-ar="عرض إحصائيات النشاط الصوتي.">View voice activity statistics.</p>
+      <button class="copy-command" data-command="/voice-stats"
+        data-en="Copy Command" data-ar="نسخ الأمر">Copy Command</button>
+    </article>
+
+  </div>
+  <p id="commandsEmpty" hidden
+     data-en="No commands found."
+     data-ar="لم يتم العثور على أوامر.">No commands found.</p>
+</section>
+
+  </main>
+
+  <footer>
+    <div class="logo"><span class="logo-icon">F</span> FLOKI BOT</div>
+    <p>POWER. CONTROL. SECURITY.</p>
+    <p>© 2026 FLOKI BOT. All rights reserved.</p>
+    <a href="owner/">Owner Dashboard</a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+<script>
+const featureDetails = {
+  logging: {
+    icon: "⌘",
+    title: {
+      en: "Advanced Logging",
+      ar: "السجلات المتقدمة"
+    },
+    description: {
+      en: "Keep track of important server events and member activities. Logging helps administrators review important actions and monitor what happens inside their Discord community.",
+      ar: "تابع أحداث السيرفر ونشاطات الأعضاء. تساعدك السجلات على مراجعة الإجراءات المهمة ومراقبة ما يحدث داخل مجتمعك على ديسكورد."
+    }
+  },
+
+  moderation: {
+    icon: "◆",
+    title: {
+      en: "Moderation",
+      ar: "الإشراف والإدارة"
+    },
+    description: {
+      en: "Manage your Discord community with moderation tools designed to help administrators maintain order and keep the server organized.",
+      ar: "أدر مجتمعك على ديسكورد باستخدام أدوات إشراف تساعد الإداريين على تنظيم السيرفر والمحافظة على النظام."
+    }
+  },
+
+  voice: {
+    icon: "♫",
+    title: {
+      en: "Voice Tracking",
+      ar: "تتبع الرومات الصوتية"
+    },
+    description: {
+      en: "Monitor voice channel activity and follow member movements between voice rooms, helping administrators understand what happens in voice channels.",
+      ar: "راقب نشاط الرومات الصوتية وانتقالات الأعضاء بين الغرف، حتى يتمكن الإداريون من معرفة ما يحدث داخل الرومات الصوتية."
+    }
+  },
+
+  admin: {
+    icon: "♙",
+    title: {
+      en: "Admin Controls",
+      ar: "التحكم الإداري"
+    },
+    description: {
+      en: "Keep administrative actions organized and monitored, making server management easier and more structured.",
+      ar: "نظّم الإجراءات الإدارية وراقب نشاط الإداريين، حتى تكون إدارة السيرفر أسهل وأكثر ترتيباً."
+    }
+  }
+};
+
+const featureModal = document.getElementById("featureModal");
+const modalIcon = document.getElementById("modalIcon");
+const modalTitle = document.getElementById("modalTitle");
+const modalDescription = document.getElementById("modalDescription");
+
+function openFeature(feature) {
+  const item = featureDetails[feature];
+  if (!item) return;
+
+  const isArabic = document.body.dir === "rtl";
+  const lang = isArabic ? "ar" : "en";
+
+  modalIcon.textContent = item.icon;
+  modalTitle.textContent = item.title[lang];
+  modalDescription.textContent = item.description[lang];
+
+  featureModal.classList.add("active");
+}
+
+document.querySelectorAll(".feature-card[data-feature]").forEach(card => {
+  card.addEventListener("click", () => {
+    openFeature(card.dataset.feature);
+  });
+
+  card.addEventListener("keydown", event => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      openFeature(card.dataset.feature);
+    }
+  });
+});
+
+function closeFeature() {
+  featureModal.classList.remove("active");
+}
+
+document.getElementById("closeFeatureModal")
+  .addEventListener("click", closeFeature);
+
+featureModal.addEventListener("click", event => {
+  if (event.target === featureModal) {
+    closeFeature();
+  }
+});
+
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape") {
+    closeFeature();
+  }
+});
+
+</script>
+<script src="app.js"></script>
+
+<script>
+const commandSearch = document.getElementById("commandSearch");
+const commandCards = [...document.querySelectorAll(".command-card")];
+const commandFilters = [...document.querySelectorAll(".command-filter")];
+const commandsEmpty = document.getElementById("commandsEmpty");
+
+let selectedCategory = "all";
+
+function filterCommands() {
+  const search = commandSearch.value.trim().toLowerCase();
+  let visible = 0;
+
+  commandCards.forEach(card => {
+    const matchesCategory = selectedCategory === "all" ||
+      card.dataset.category === selectedCategory;
+    const matchesSearch = card.textContent.toLowerCase().includes(search);
+    const show = matchesCategory && matchesSearch;
+    card.hidden = !show;
+    if (show) visible++;
+  });
+
+  commandsEmpty.hidden = visible !== 0;
+}
+
+commandFilters.forEach(button => {
+  button.addEventListener("click", () => {
+    selectedCategory = button.dataset.filter;
+    commandFilters.forEach(item =>
+      item.classList.toggle("active", item === button)
+    );
+    filterCommands();
+  });
+});
+
+commandSearch.addEventListener("input", filterCommands);
+
+document.querySelectorAll(".copy-command").forEach(button => {
+  button.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(button.dataset.command);
+      const oldText = button.textContent;
+      button.textContent = document.body.dir === "rtl" ? "تم النسخ ✓" : "Copied ✓";
+      setTimeout(() => button.textContent = oldText, 1200);
+    } catch {
+      alert("تعذر النسخ، حاول مرة ثانية.");
+    }
+  });
+});
+</script>
+
+</body>
+</html>
+</body>
+</html>

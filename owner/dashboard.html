@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floki Owner Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <h2>FLOKI <span>OWNER</span></h2>
+    <button id="logoutBtn" class="logout">LOG OUT</button>
+  </header>
+
+  <main class="container">
+    <div class="heading">
+      <span>CONTROL CENTER</span>
+      <h1>Website Dashboard</h1>
+      <p>Manage your Floki Bot website content.</p>
+    </div>
+
+    <form id="contentForm">
+
+      <section class="panel">
+        <h2>Brand Settings</h2>
+
+        <label>Website Name</label>
+        <input id="brand" type="text" placeholder="FLOKI BOT">
+      </section>
+
+      <section class="panel">
+        <h2>English Content</h2>
+
+        <label>Main Title</label>
+        <input id="title_en" type="text">
+
+        <label>Website Description</label>
+        <textarea id="description_en" rows="4"></textarea>
+
+        <label>Features Title</label>
+        <input id="featuresTitle_en" type="text">
+
+        <label>Features Description</label>
+        <textarea id="featuresDescription_en" rows="3"></textarea>
+      </section>
+
+      <section class="panel" dir="rtl">
+        <h2>المحتوى العربي</h2>
+
+        <label>العنوان الرئيسي</label>
+        <input id="title_ar" type="text">
+
+        <label>وصف الموقع</label>
+        <textarea id="description_ar" rows="4"></textarea>
+
+        <label>عنوان المميزات</label>
+        <input id="featuresTitle_ar" type="text">
+
+        <label>وصف المميزات</label>
+        <textarea id="featuresDescription_ar" rows="3"></textarea>
+      </section>
+
+      <button type="submit" id="saveBtn" class="save">
+        SAVE CHANGES
+      </button>
+
+      <p id="status"></p>
+
+    </form>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="../config.js"></script>
+  <script src="dashboard.js"></script>
+
+</body>
+</html>
